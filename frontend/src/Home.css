@@ -1,0 +1,217 @@
+.dashboard_title {
+	color: #2196f3;
+	text-align: center;
+	margin: 2rem;
+	font: 400 3rem italic;
+}
+
+.HomeMainContainer {
+	overflow: auto;
+}
+
+.NoProject {
+	width: 100%;
+	height: 10rem;
+	font: 400 1.5rem cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dashboard_index {
+	display: flex;
+	margin: 0 10vw;
+	min-width: 40rem;
+	background-color: #282a36;
+	color: #2196f3;
+	justify-content: center;
+}
+
+.dashboard_index > p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+	height: 2rem;
+	text-align: center;
+	font: 400 1.4rem italic;
+	min-width: 10rem;
+	cursor: pointer;
+}
+
+.home_addNewProject {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+.home_addNewProject > button {
+	width: 10rem;
+	height: 2rem;
+	color: #282a36;
+	background-color: #2196f3;
+	border: none;
+	transition: all 0.5s;
+}
+
+.home_addNewProject > button:hover {
+	border: 1px solid #2196f3;
+	background-color: #282a36;
+	color: #2196f3;
+}
+
+.project_container {
+	display: flex;
+	margin: 0 10;
+	justify-content: center;
+	margin: 1rem 0;
+	transition: all 0.5s;
+}
+.project_container > p {
+	width: 20vw;
+	height: 2rem;
+	cursor: pointer;
+
+	border: 1px solid #282a36;
+	text-align: center;
+	min-width: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+}
+.project_container:hover > p {
+	border: none;
+	scale: 1.1;
+	background-color: #2196f3;
+}
+
+/* popup */
+
+.Home_popup {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	font: 400 1rem sans-serif;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.Home_popup_title {
+	margin: 0 1rem;
+}
+.Home_popup_title > h2 {
+	color: white;
+	font-size: 1.5rem;
+}
+.Home_popup_title > p {
+	color: #2196f3;
+	font-size: 1rem;
+}
+.Home_popup > input {
+	width: 90%;
+	height: 3rem;
+	background-color: #7ebdf1;
+	font-size: 1.3rem;
+}
+.home_popup_lanSelect {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.home_popup_lanSelect > p {
+	color: #2196f3;
+	width: 90%;
+	padding: 0.1rem;
+}
+.home_popup_lanSelect > select {
+	width: 90%;
+	height: 2rem;
+	font-size: 1.3rem;
+	border: none;
+	background-color: #7ebdf1;
+}
+.Home_popup_btn {
+	width: 100%;
+	height: 3rem;
+}
+.Home_popup_btn > button {
+	width: 6rem;
+	height: 2rem;
+	margin: 0 1rem;
+}
+#home_popup_createBtn {
+	background-color: #2196f3;
+	border: none;
+	border-radius: 9px;
+	transition: all 0.3s;
+}
+#home_popup_createBtn:hover {
+	background-color: #166aae;
+}
+#home_popup_cancelBtn {
+	background-color: #282a36;
+	border: 2px solid red;
+	transition: all 0.3s;
+	color: red;
+	border-radius: 9px;
+}
+#home_popup_cancelBtn:hover {
+	background-color: #6c4138;
+}
+/* ____________________________________________________________ */
+@media screen and (max-width: 900px) {
+	.dashboard_title {
+		font: 400 4rem italic;
+	}
+	.dashboard_index {
+		display: flex;
+		margin: 0 5vw;
+		background-color: #282a36;
+		color: #2196f3;
+		justify-content: center;
+	}
+
+	.dashboard_index > p {
+		width: 22.5vw;
+		height: 3rem;
+		font: 400 1.6rem italic;
+		min-width: 10rem;
+	}
+	.home_addNewProject > button {
+		width: 12rem;
+		height: 2.3rem;
+		font-size: 1.2rem;
+	}
+
+	.project_container {
+		margin: 0 5rem;
+		margin: 1rem 0;
+		transition: all 0.5s;
+	}
+	.project_container > p {
+		width: 22.5vw;
+		height: 2.5rem;
+		min-width: 10rem;
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.dashboard_title {
+		font: 400 3.5rem italic;
+	}
+	.dashboard_index {
+		display: flex;
+		margin: 0 1rem;
+		background-color: #282a36;
+		color: #2196f3;
+		justify-content: center;
+	}
+	.project_container {
+		margin: 0 1rem;
+		justify-content: flex-start;
+	}
+}

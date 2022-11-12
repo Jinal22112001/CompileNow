@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
+/* scrollbar color */
+html {
+	--scrollbarBG: #282a36;
+	--thumbBG: #2196f3;
+}
